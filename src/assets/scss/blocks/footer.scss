@@ -1,0 +1,142 @@
+.footer {
+    background:  #9FB4FD;
+    position: relative;
+    z-index: 1;
+}
+
+.footer-decoration {
+    display: block;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+    
+    &.one {
+        bottom: 0;
+        left: 0;
+        max-width: 580px;
+
+        @media(max-width: $tablet-bp) {
+            max-width: 300px;
+        }
+    }
+
+    &.two {
+        top: 0;
+        left: 72px;
+        max-width: 268px;
+
+        @media(max-width: $tablet-bp) {
+            max-width: 160px;
+        }
+    }
+
+    &.three {
+        bottom: 0;
+        right: 0;
+        max-width: 470px;
+
+        @media(max-width: $tablet-bp) {
+            max-width: 280px;
+        }
+    }
+
+    &.four {
+        bottom: 86px;
+        right: 417px;
+        max-width: 82px;
+
+        @media(max-width: $tablet-bp) {
+            max-width: 60px;
+        }
+    }
+}
+
+.footer-inner {
+    padding: 98px 0;
+    display: flex;
+    justify-content: space-between;
+
+    @media(max-width: $tablet-bp) {
+        padding: 36px 0 70px;
+        flex-direction: column;
+    }
+}
+
+.footer-logo {
+    display: block;
+    max-width: 100px;
+
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+    @media(max-width: $tablet-bp) {
+        max-width: 50px;
+        margin-bottom: 40px;
+    }
+}
+
+.footer-center {
+    display: flex;
+
+    @media(max-width: $tablet-bp) {
+        flex-direction: column;
+        margin-bottom: 14px;
+    }
+}
+
+.footer-center-col {
+    & + & {
+        margin-left: 50px;
+    }
+
+    @media(max-width: $tablet-bp) {
+        & + & {
+            margin-left: 0;
+            margin-top: 24px;
+        }
+    }
+}
+
+.footer-center-link {
+    display: block;
+    font-size: 18px;
+    line-height: 32px;
+    color: $white;
+
+    & + & {
+        margin-top: 3px;
+    }
+
+    &.blue {
+        color: $blue;
+
+        margin-top: 43px;
+
+        @media(max-width: $tablet-bp) {
+            margin-top: 3px;
+        }
+    }
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-right-link {
+    display: block;
+    max-width: 166px;
+    
+    img {
+        display: block;
+        max-width: 166px;
+        height: auto;
+    }
+
+    & + & {
+        margin-top: 13px;
+    }
+}

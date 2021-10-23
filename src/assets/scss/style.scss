@@ -1,0 +1,54 @@
+@import "vars";
+@import "fonts.scss";
+@import "vendor/reset.scss";
+
+body {
+    background-color: $white;
+
+    font-family: $gil-r;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: $black;
+
+    &.no-scroll {
+        overflow: hidden;
+        padding-right: 15px;
+    }
+}
+
+span {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.page {
+    overflow: hidden;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/* Blocks */
+@import "blocks/container.scss";
+@import "blocks/btn.scss";
+@import "blocks/header.scss";
+@import "blocks/footer.scss";
+@import "blocks/intro.scss";
+@import "blocks/services.scss";
+@import "blocks/why.scss";
+@import "blocks/steps.scss";
+@import "blocks/delivery.scss";
+@import "blocks/reviews.scss";
+@import "blocks/modal.scss";

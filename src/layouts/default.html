@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    {{> head }}
+</head>
+<body>
+
+    {{> header }}
+
+    <div class="page">
+        {{> body }}
+    </div><!-- ./page -->
+
+    {{> footer }}
+
+    <div class="modal" id="form-modal">
+        <div class="modal-dialog">
+            <div class="modal-top">
+                <span class="modal-top-title">Оставьте заявку </span>
+                <span class="modal-top-subtitle">Оставьте заявку и наш менеджер свяжется с вами в ближайшее время</span>
+            </div>
+
+            <form class="modal-form" action="mail.php">
+                <input type="hidden" name="admin_email[]" value="piterparker777881@gmail.com">
+		        <input type="hidden" name="form_subject" value="Тема письма">
+                
+                <input class="modal-input" data-validate-field="name" name="name" type="text" placeholder="Имя">
+                <input class="modal-input" data-validate-field="tel" name="tel" type="tel" placeholder="Номер телефона">
+
+                <div class="modal-service">
+                    <span class="modal-service-title">Выберите услугу которая вас интересует:</span>
+
+                    <div class="modal-service-inner">
+                        <div class="modal-service-item">
+                            <div class="modal-checkbox">
+                                <input class="modal-checkbox-input" type="checkbox" name="pcr" value="true" id="modal-checkbox_1">
+                                <label class="modal-checkbox-label" for="modal-checkbox_1">ПЦР тест</label>
+                            </div>
+                        </div>
+
+                        <div class="modal-service-item">
+                            <div class="modal-checkbox">
+                                <input class="modal-checkbox-input" type="checkbox" name="himchistka" value="true" id="modal-checkbox_2">
+                                <label class="modal-checkbox-label" for="modal-checkbox_2">Химчистка</label>
+                            </div>
+                        </div>
+
+                        <div class="modal-service-item">
+                            <div class="modal-checkbox">
+                                <input class="modal-checkbox-input" type="checkbox" name="stirka" value="true" id="modal-checkbox_3">
+                                <label class="modal-checkbox-label" for="modal-checkbox_3">Стирка</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn" type="submit" id="modal-send">Оставить заявку</button>
+            </form>
+
+            <div class="modal-thanks" id="modal-thanks">
+                Спасибо за заявку, мы перезвоним вам через несколько минут.
+            </div>
+
+            <img class="modal-dialog-decoration one" src="assets/images/modal/modal-decoration-1.png" alt="">
+            <img class="modal-dialog-decoration two" src="assets/images/modal/modal-decoration-2.png" alt="">
+
+            <a class="modal-close" href="#">
+                <img src="assets/images/modal/close.svg" alt="">
+            </a>
+        </div><!-- ./modal-dialog -->
+    </div><!-- ./modal -->
+
+    <div class="modal" id="price-modal">
+        <div class="modal-dialog modal-dialog--price">
+            <div class="modal-price">
+                <span class="modal-price-title">
+                    Прайс-лист
+                </span>
+
+                <div class="modal-price-grid">
+                    <div class="modal-price-item">
+                        <div class="modal-price-item-name">Услуга:</div>
+                        <div class="modal-price-item-num">300$</div>
+                    </div>
+                    <div class="modal-price-item">
+                        <div class="modal-price-item-name">Услуга:</div>
+                        <div class="modal-price-item-num">300$</div>
+                    </div>
+                    <div class="modal-price-item">
+                        <div class="modal-price-item-name">Услуга:</div>
+                        <div class="modal-price-item-num">300$</div>
+                    </div>
+                    <div class="modal-price-item">
+                        <div class="modal-price-item-name">Услуга:</div>
+                        <div class="modal-price-item-num">300$</div>
+                    </div>
+                </div>
+
+                <div class="modal-price-grid">
+                    <div class="modal-price-item">
+                        <div class="modal-price-item-name">Услуга:</div>
+                        <div class="modal-price-item-num">300$</div>
+                    </div>
+                    <div class="modal-price-item">
+                        <div class="modal-price-item-name">Услуга:</div>
+                        <div class="modal-price-item-num">300$</div>
+                    </div>
+                    <div class="modal-price-item">
+                        <div class="modal-price-item-name">Услуга:</div>
+                        <div class="modal-price-item-num">300$</div>
+                    </div>
+                    <div class="modal-price-item">
+                        <div class="modal-price-item-name">Услуга:</div>
+                        <div class="modal-price-item-num">300$</div>
+                    </div>
+                </div>
+
+                <div class="modal-price-grid">
+                    <div class="modal-price-item">
+                        <div class="modal-price-item-name">Услуга:</div>
+                        <div class="modal-price-item-num">300$</div>
+                    </div>
+                    <div class="modal-price-item">
+                        <div class="modal-price-item-name">Услуга:</div>
+                        <div class="modal-price-item-num">300$</div>
+                    </div>
+                    <div class="modal-price-item">
+                        <div class="modal-price-item-name">Услуга:</div>
+                        <div class="modal-price-item-num">300$</div>
+                    </div>
+                    <div class="modal-price-item">
+                        <div class="modal-price-item-name">Услуга:</div>
+                        <div class="modal-price-item-num">300$</div>
+                    </div>
+                </div>
+            </div>
+
+            <img class="modal-dialog-decoration one" src="assets/images/modal/modal-decoration-1.png" alt="">
+            <img class="modal-dialog-decoration two" src="assets/images/modal/modal-decoration-2.png" alt="">
+
+            <a class="modal-close" href="#">
+                <img src="assets/images/modal/close.svg" alt="">
+            </a>
+        </div><!-- ./modal-dialog -->
+    </div><!-- ./modal -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

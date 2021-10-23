@@ -1,0 +1,267 @@
+.steps {
+    position: relative;
+}
+
+.steps-decoration-1 {
+    display: block;
+    max-width: 640px;
+    height: auto;
+    position: absolute;
+    top: -150px;
+    right: 0;
+}
+
+.steps-inner {
+    padding: 70px 0;
+
+    @media(max-width: $mobile-bp) {
+        padding: 40px 0 0;
+    }
+}
+
+.steps-title {
+    margin-bottom: 68px;
+
+    font-size: 48px;
+    font-family: $gil-e;
+    line-height: 56px;
+
+    @media(max-width: $mobile-bp) {
+        margin-bottom: 40px;
+
+        font-size: 24px;
+        line-height: 30px;
+    }
+}
+
+.steps-content {
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    &.reverse {
+        flex-direction: row-reverse;
+
+        @media(max-width: $ipad-pro-bp) {
+            flex-direction: column;
+        }
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @media(max-width: $ipad-pro-bp) {
+        flex-direction: column;
+    }
+}
+
+.steps-content-decoration {
+    display: block;
+    max-width: 400px;
+    height: auto;
+    position: absolute;
+    bottom: -120px;
+    left: 36%;
+    transform: translateX(-50%);
+    transition: all .2s linear;
+    z-index: -1;
+}
+
+.steps-preview {
+    max-width: 530px;
+
+    @media(max-width: $ipad-pro-bp) {
+        margin: 0 auto 100px;
+    }
+}
+
+.steps-preview-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.steps-info {
+    max-width: 466px;
+    position: relative;
+    margin-top: 120px;
+
+    &.mt180 {
+        margin-top: 180px;
+
+        @media(max-width: $ipad-pro-bp) {
+            margin-top: 0;
+        }
+    }
+
+    @media(max-width: $ipad-pro-bp) {
+        margin: 0 auto;
+    }
+
+    @media(max-width: $mobile-bp) {
+        max-width: none;
+        width: 100%;
+        padding-left: 40px;
+    }
+}
+
+.steps-info-title {
+    margin-bottom: 8px;
+
+    font-size: 24px;
+    line-height: 32px;
+    font-family: $inter-s;
+
+    @media(max-width: $mobile-bp) {
+        font-size: 18px;
+    }
+}
+
+.steps-info-text {
+    margin-bottom: 24px;
+
+    font-size: 18px;
+    line-height: 26px;
+    font-family: $inter-m;
+    color: $gray;
+
+    @media(max-width: $mobile-bp) {
+        font-size: 14px;
+    }
+}
+
+.steps-info-links {
+    display: flex;
+}
+
+.steps-info-link {
+    display: block;
+    max-width: 166px;
+
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+    &.sm {
+        max-width: 162px;
+    }
+
+    & + & {
+        margin-left: 13px;
+    }
+}
+
+.steps-info-icons {
+    display: flex;
+    align-items: center;
+}
+
+.steps-info-icon {
+    display: block;
+    max-width: 48px;
+    height: auto;
+    margin-right: 25px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    @media(max-width: $mobile-bp) {
+        max-width: 35px;
+        margin-right: 18px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.steps-info-dates {
+    display: flex;
+}
+
+.steps-info-date {
+    width: 80px;
+    padding: 14px 2px;
+
+    border-radius: 8px;
+    background: $white;
+    box-shadow: 0px 0px 40px 0px rgba(212, 217, 232, 0.4);
+
+    color: $blue;
+    font-size: 13px;
+    line-height: 14px;
+    text-align: center;
+
+    & + & {
+        margin-left: 8px;
+    }
+
+    &.black {
+        background: $black;
+        color: $white;
+    }
+}
+
+.steps-info-num {
+    position: absolute;
+    top: -40px;
+    left: -70px;
+
+    font-size: 144px;
+    font-family: $gil-b;
+    font-weight: 700;
+    color: rgba(50, 128, 239, 0.1);
+
+    @media(max-width: $laptop-bp) {
+        left: 0;
+    }
+
+    @media(max-width: $mobile-bp) {
+        font-size: 72px;
+    }
+}
+
+.steps-content-star {
+    display: block;
+    width: 79px;
+    height: 79px;
+    position: absolute;
+    z-index: -1;
+
+    &.one {
+        top: -80px;
+        right: -50px;
+
+        @media(max-width: $mobile-bp) {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    &.two {
+        width: 44px;
+        height: 44px;
+
+        bottom: 170px;
+        left: 80px;
+
+        @media(max-width: $mobile-bp) {
+            width: 30px;
+            height: 30px;
+            left: 120px;
+        }
+    }
+
+    &.three {
+        width: 27px;
+        height: 27px;
+
+        bottom: 200px;
+        right: 70px;
+    }
+}

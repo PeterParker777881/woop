@@ -1,0 +1,123 @@
+.reviews-inner {
+    padding: 72px 0;
+
+    @media(max-width: $mobile-bp) {
+        padding: 60px 0 40px;
+    }
+}
+
+.reviews-title {
+    margin-bottom: 30px;
+    padding-left: 30px;
+
+    font-size: 48px;
+    line-height: 64px;
+    font-family: $gil-e;
+    font-weight: 800;
+
+    @media(max-width: $mobile-bp) {
+        margin-bottom: 12px;
+        padding-left: 0;
+
+        font-size: 24px;
+        line-height: 30px;
+    }
+}
+
+.reviews-slider {
+    padding-bottom: 70px;
+    width: calc(100% + 60px);
+    margin: 0 -30px;
+
+    .swiper-pagination {
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .swiper-pagination-bullet {
+            width: 8px;
+            height: 8px;
+            background: $blue;
+            opacity: 1;
+            transition: all .1s linear;
+        }
+
+        .swiper-pagination-bullet-active {
+            width: 12px;
+            height: 12px;
+            background: $white;
+            border: 3px solid $blue;
+            transition: all .1s linear;
+        }
+    }
+}
+
+.reviews-content {
+    padding: 0 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 27px;
+}
+
+.reviews-item {
+    margin-top: auto;
+    padding: 30px 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.reviews-item-top {
+    margin-bottom: 30px;
+    padding: 24px 33px;
+    overflow: hidden;
+
+    position: relative;
+
+    border-radius: 24px;
+    box-shadow: 0px 0px 40px 0px rgba(212, 217, 232, 0.4);
+
+    font-size: 16px;
+    color: $gray;
+    line-height: 24px;
+
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 15px 12.5px 0 12.5px;
+        border-color: $white transparent transparent transparent;
+    }
+}
+
+.reviews-item-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reviews-item-avatar {
+    display: block;
+    max-width: 56px;
+    height: auto;
+    margin-bottom: 8px;
+}
+
+.reviews-item-name {
+    font-size: 18px;
+    line-height: 28px;
+    font-family: $gil-b;
+    font-weight: 700;
+}
+
+.reviews-item-aftertext {
+    color: $gray;
+    user-select: none;
+}

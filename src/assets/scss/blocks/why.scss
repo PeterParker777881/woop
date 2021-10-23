@@ -1,0 +1,122 @@
+.why-inner {
+    padding: 70px 0;
+
+    @media(max-width: $mobile-bp) {
+        padding: 40px 0;
+    }
+}
+
+.why-title {
+    margin-bottom: 45px;
+
+    font-size: 48px;
+    font-family: $gil-e;
+    font-weight: 800;
+    line-height: 56px;
+
+    @media(max-width: $mobile-bp) {
+        margin-bottom: 17px;
+
+        font-size: 24px;
+        line-height: 30px;
+    }
+}
+
+.why-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media(max-width: $ipad-pro-bp) {
+        flex-direction: column;
+    }
+}
+
+.why-preview {
+    max-width: 540px;
+
+    @media(max-width: $ipad-pro-bp) {
+        margin: 0 auto 40px;
+    }
+}
+
+.why-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.why-info {
+    max-width: 580px;
+
+    @media(max-width: $ipad-pro-bp) {
+        margin: 0 auto;
+    }
+}
+
+.why-list-item {
+    display: flex;
+
+    & + & {
+        margin-top: 48px;
+    }
+}
+
+.why-list-item-icon {
+    width: 72px;
+    height: 72px;
+    padding: 24px;
+    margin-right: 40px;
+
+    border-radius: 100%;
+    background: #000;
+    background: linear-gradient(156.46deg, rgba(149, 229, 255, 0.2) 10.97%, rgba(169, 204, 251, 0.2) 40.73%, rgba(172, 200, 251, 0.2) 43.74%, rgba(177, 194, 250, 0.2) 48.91%, rgba(146, 171, 255, 0.2) 93.84%);
+
+    img {
+        display: block;
+        width: 24px;
+        height: 24px;
+    }
+
+    @media(max-width: $mobile-bp) {
+        width: 64px;
+        height: 64px;
+        padding: 21px;
+
+        margin-right: 16px;
+
+        img {
+            width: 21px;
+            height: 21px;
+        }
+    }
+}
+
+.why-list-item-text {
+    max-width: 470px;
+}
+
+.why-list-item-text-top {
+    margin-bottom: 8px;
+
+    font-family: $gil-s;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+
+    @media(max-width: $mobile-bp) {
+        margin-bottom: 4px;
+
+        font-size: 18px;
+    }
+}
+
+.why-list-item-text-bot {
+    font-size: 18px;
+    line-height: 26px;
+    color: $gray;
+
+    @media(max-width: $mobile-bp) {
+        font-size: 14px;
+    }
+}
